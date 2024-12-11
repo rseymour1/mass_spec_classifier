@@ -16,7 +16,7 @@ processing_fn = [
     dc.data.preprocessing.filter_intensity(min_intensity = 0.0),
     #https://spectrum-utils.readthedocs.io/en/latest/api.html#spectrum_utils.spectrum.MsmsSpectrum.scale_intensity
     dc.data.preprocessing.scale_intensity(scaling=None),  # Might want to change later
-    dc.data.preprocessing.scale_to_unit_norm,
+    dc.data.preprocessing.scale_to_unit_norm,  # Not sure what this is yet
 ]
 df = dc.data.spectra_to_df(
     mzml_file,
@@ -24,3 +24,5 @@ df = dc.data.spectra_to_df(
     preprocessing_fn=processing_fn
 )
 print(df.head())
+
+# Either spectrum_dataset or streaming_spectrum_dataset
