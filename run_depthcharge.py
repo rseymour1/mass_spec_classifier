@@ -1,7 +1,7 @@
-!pip install depthcharge-ms
-!pip install pylance==0.15
+#!pip install depthcharge-ms
+#!pip install pylance==0.15
 
-import depthcharge as dc
+import run_depthcharge as dc
 from depthcharge.encoders import PeakEncoder
 from depthcharge.data import SpectrumDataset
 import torch
